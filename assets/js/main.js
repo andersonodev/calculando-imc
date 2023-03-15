@@ -12,12 +12,12 @@ form.addEventListener('submit', function (event) {
 
 
     if (!peso && !altura) {
-        result('Peso e altura inválidos', false)
+        result('Peso e altura inválido', false)
         return;
     }
 
     if (!peso) {
-        result('Peso inválida', false);
+        result('Peso inválido', false);
         return;
     };
 

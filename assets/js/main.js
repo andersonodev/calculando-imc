@@ -26,9 +26,6 @@ form.addEventListener('submit', function (event) {
         return;
     };
     
-    
-
-    console.log('cheguei mona')
 
     const imc = getImc(peso, altura);
     const nivelImc = getNivelImc(imc);
@@ -68,14 +65,11 @@ function getNivelImc (imc) {
     };
 };
 
-
-
 function getImc(peso, altura) {
     const imc = peso / (altura * altura);
     return imc.toFixed(2);
 
 }
-
 
 function criaP () {
     const p = document.createElement('p'); //cria o parágrafo
